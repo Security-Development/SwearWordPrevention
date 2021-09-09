@@ -9,8 +9,9 @@ function FilterMSG(msg)
   const filter1 = msg.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, "");
   const filter2 = filter1.replace(/[" "]/gi, "");
   const filter3 = filter2.replace(/[0-9]/g, "");
+  const filter4 = filter3.replace(/[ㅏ-ㅣ]/g, "");
 
-  return filter3
+  return filter4
 
 }
 
